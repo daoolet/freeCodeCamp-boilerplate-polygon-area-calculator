@@ -24,7 +24,7 @@ class Rectangle:
     def get_picture(self):
 
         if self.width > 50 or self.height > 50:
-            return "Too big picture."
+            return "Too big for picture."
         else:
             return '\n'.join('*' * self.width for _ in range(self.height)) + '\n'
 
