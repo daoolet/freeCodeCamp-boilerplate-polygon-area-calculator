@@ -16,7 +16,7 @@ class Rectangle:
         return self.height * self.width
     
     def get_perimeter(self):
-        return 2 * self.width + 2 * self.height
+        return (2 * self.width + 2 * self.height)
 
     def get_diagonal(self):
         return (self.width ** 2 + self.height ** 2) ** .5
@@ -29,7 +29,7 @@ class Rectangle:
             return '\n'.join('*' * self.width for _ in range(self.height)) + '\n'
 
     def get_amount_inside(self, shape):
-        return (self.width // shape.width) * (self.height // shape.heigth)
+        return (self.width // shape.width) * (self.height // shape.height)
 
 
 class Square(Rectangle):
